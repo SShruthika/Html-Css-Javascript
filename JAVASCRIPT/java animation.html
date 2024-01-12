@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+    
+</head>
+<body>
+    <h1> javascript animation</h1>
+
+    <img id="img" src="C:\Users\SightSpectrum\Desktop\html\images\pea.jpeg" alt="html" width="300px" onmouseover ="increase()" onmouseout="decrease()">
+    <script>
+ function increase(){
+    document.getElementById("img").style.width="500px"
+ }
+ function decrease(){
+    document.getElementById("img").style.width="200px"
+ }
+
+// var width =100;
+// var addition =2;
+// var intervalID=0;
+
+// function increase(){
+//    clearInterval(intervalID)
+//    intervalID=setInterval(zoomin,1000)
+//  }
+//  function decrease(){
+//    clearInterval(intervalID)
+//    intervalID=setInterval(zoomout,1000)
+//  }
+
+//  function zoomin()
+// {
+//    if(width<200)
+//    {
+//       width = width+addition;
+//       document.getElementById("img").style.width="500"
+//       console.log(width);
+//    }
+//    else
+//    {
+//       clearInterval(intervalID)
+//    }
+// }
+// function zoomout()
+// {
+//    if(width>100)
+//    {
+//       width = width-addition;
+//       document.getElementById("img").style.width="300"
+//       console.log(width);
+//    }
+//    else
+//    {
+//       clearInterval(intervalID)
+//    }
+// }
+
+    </script>
+    </body>
+</html>

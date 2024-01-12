@@ -1,0 +1,21 @@
+<!-- <button onclick="myStopFunction()">Stop time</button> -->
+<script>
+ //setinterval
+//  setInterval(displayHello, 1000);
+
+//  function displayHello() {
+//   console.log( "Hello");
+//  }
+ 
+ //setinterval clearout
+ const myInterval = setInterval(myTimer, 1000);
+ 
+ function myTimer() {
+   const date = new Date();
+   console.log( date.toLocaleTimeString());
+ }
+ 
+ function myStopFunction() {
+   clearInterval(myInterval);
+ }
+//  </script>

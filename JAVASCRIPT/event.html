@@ -1,0 +1,23 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+
+<h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+</body>
+</html> -->
+<script>
+<div class="buttons">
+  <button>Press 1</button>
+  <button>Press 2</button>
+  <button>Press 3</button>
+</div>
+const buttonContainer = document.querySelector('.buttons');
+console.log('buttonContainer', buttonContainer);
+
+buttonContainer.addEventListener('click', event => {
+  console.log(event.target.value)
+})
+</script>

@@ -1,0 +1,25 @@
+function hello() { 
+        console.log(arguments[1]); 
+    } 
+      
+    hello("GFG" ,"shruthika"); 
+    
+
+    
+// Function that takes an object as an argument
+function printPerson(person) {
+    console.log(`Name: ${person.name}`);
+    console.log(`Age: ${person.age}`);
+    console.log(`Occupation: ${person.occupation}`);
+  }
+  
+  // Creating an object
+  const myPerson = {
+    name: "shruthi",
+    age: 20,
+    occupation: "Software trainee"
+  };
+  
+  // Calling the function with the object as an argument
+  printPerson(myPerson);
+  

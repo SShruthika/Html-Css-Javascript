@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypotenuse Calculator</title>
+</head>
+<body>
+
+  <script>
+    // Function to calculate the hypotenuse
+    function calculateHypotenuse() {
+      // Prompt the user for input
+      const sideA = parseFloat(prompt("Enter the length of side A:"));
+      const sideB = parseFloat(prompt("Enter the length of side B:"));
+
+      // Check if the inputs are valid numbers
+      if (isNaN(sideA) || isNaN(sideB)) {
+        alert("Please enter valid numerical values for the sides.");
+        return;
+      }
+
+      // Using the Pythagorean theorem: c² = a² + b²
+      const hypotenuse = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+
+      // Display the result
+     alert(`For a right-angled triangle with sides ${sideA} and ${sideB}, the hypotenuse is: ${hypotenuse.toFixed(2)}`);
+    }
+
+    // Call the function to calculate the hypotenuse
+    calculateHypotenuse();
+  </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a=8;
+    let b=24;
+    let c=Math.hypot(a,b)
+    console.log(c);
+    
+    let d=Math.hypot(1,2,3)
+    console.log(d);
+      </script>
+</body>
+</html>
+

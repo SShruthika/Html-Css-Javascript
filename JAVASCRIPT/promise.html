@@ -1,0 +1,41 @@
+<script>
+var a=10;
+var b=8;
+let promise = new Promise((resolve,reject) => {
+if(a>b)
+ resolve()
+else
+ reject()
+})
+
+promise.then((resolve)=>{
+    console.log("a is bigger then b");
+}).catch((reject)=>{
+    console.log("sorry a is small");
+})
+</script>
+
+
+
+
+
+
+
+
+
+<!-- <script>
+    let myPromise = new Promise(function(myResolve, myReject) {
+
+// "Producing Code" (May take some time)
+
+  myResolve("success"); // when successful
+  myReject("failed");  // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then((value) =>
+  console.log(success);/* code if successful */ 
+  .catch((failed) =>  
+    console.log(failed);/* code if some error */ }
+);
+</script> -->

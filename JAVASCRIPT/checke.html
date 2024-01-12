@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checked Property Example</title>
+</head>
+<body>
+
+  <label>
+    <input type="checkbox" id="myCheckbox"> Check me
+  </label>
+
+  <script>
+    // Accessing the checked property in JavaScript
+    const checkbox = document.getElementById("myCheckbox");
+
+    // Check the checkbox programmatically
+    checkbox.checked = true;
+
+    // Log the current state of the checkbox
+    console.log("Is the checkbox checked?", checkbox.checked);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>selectors</title>
+</head>
+<body>
+    <p id="hi">shruthika</p>
+
+    <p class="hello">red</p>
+    <p class="hello">green</p>
+    <p class="hello">blue</p>
+
+<div id="hari">
+    <p class="hello">red</p>
+    <p class="hello">green</p>
+    <p class="hello">blue</p>
+</div>
+
+    <script>
+        var a=document.getElementById("hi")
+        a.style.color="red";
+
+        var b=document.getElementsByClassName("hello")
+        b[2].style.color="yellow"
+        
+        var c=document.getElementsByTagName("p")
+        c[1].style.color="green"
+        
+        var d=document.querySelector("#hi")
+        d.style.backgroundColor="orange"
+
+     
+        var e=document.querySelectorAll("#hari")
+      e.forEach(e=>
+      {
+          e.style.backgroundColor="orange"
+      })
+        
+
+    </script>
+</body>
+</html>
+
+
+
+

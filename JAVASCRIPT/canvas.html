@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Example</title>
+  <style>
+    /* Add some styling if needed */
+    canvas {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The canvas element where the drawing will happen -->
+  <canvas id="myCanvas" width="200" height="200"></canvas>
+
+  <script>
+    // Get the canvas element and its context
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+
+    // Draw a rectangle on the canvas
+    // ctx.fillStyle = 'lightblue';
+    // ctx.fillRect(50, 50, 100, 50);
+
+    // // Draw a circle on the canvas
+    // ctx.beginPath();
+    // ctx.arc(300, 100, 30, 0, 2 * Math.PI);
+    // ctx.fillStyle = 'coral';
+    // ctx.fill();
+    // ctx.closePath();
+   
+
+   ctx.font="15px impact"
+   ctx.fillStyle="green"
+    ctx.fillText("Shruthika", 70,80);
+    ctx.textAlign="center";
+   
+    ctx.beginPath();
+    ctx.arc(100, 75, 50, 0 * Math.PI, 2* Math.PI)
+    ctx.stroke();
+
+    // ctx.fillStyle="green" ;
+    // ctx.fill();
+     </script>
+
+</body>
+</html>
